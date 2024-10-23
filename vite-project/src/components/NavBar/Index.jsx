@@ -11,10 +11,6 @@ export const NavBar = () =>{
                     <h1>Mercado <span>23h</span></h1>
                 </div>
             </div>
-            <div className="search">
-                <input type="text" placeholder="Pesquise um produto"  />
-                <FaSearch className="icon" color={Colors.red} size={25}/>
-            </div>
             <div className="menu">
                 <ul>
                     <li>Home</li>

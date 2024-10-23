@@ -8,12 +8,12 @@ export const Wrapper = styled.div`
     .show{
         display: block;
         width: 50%;
-    height: 1000%;
-    background-color: ${Colors.white};
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
+        height: 1000%;
+        background-color: ${Colors.white};
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
 
     .header{
      
