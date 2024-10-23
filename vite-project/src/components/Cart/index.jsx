@@ -25,7 +25,7 @@ export default function Cart({ visible, setVisible, data }) {
                         </div>
                     ))
                 ) : (
-                    <p>O carrinho está vazio.</p>
+                    <div className="vazio"> <p>O carrinho está vazio.</p> </div> 
                 )}
             </div>
         </Wrapper>

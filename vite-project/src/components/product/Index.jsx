@@ -86,8 +86,11 @@ export default function Product() {
                     ))}
                 </a>
             </div>
+            <div className="produtosPub">
+            <h1>Nossos Produtos</h1>
+            </div>
             <div className="container" id="prod">
-                <h1>Nossos Produtos</h1>
+               
                 <div className="cards">
                     {data[indexAtive].products.map((item) => (
                         <div key={item.id} className="card">

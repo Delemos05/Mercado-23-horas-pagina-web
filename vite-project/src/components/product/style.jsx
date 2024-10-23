@@ -3,16 +3,39 @@ import Colors from "../../Utils/Colors"
 export const Wrapper = styled.div`
     margin-top: 50px;
     width: 100%;
+
+    .produtosPub{
+        h1{
+        display: flex;
+        color: ${Colors.white};
+        background-color: ${Colors.red};
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 112%;
+        width: 100%;
+        &:hover{
+            color: ${Colors.yellow};
+            transition: 1s ease;
+           
+        }
+                }
+    }
     .container{
+    
+
         width: 1200px;
         margin:  0 auto;
         .cards{
             width: 100%;
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
             margin-top: 30px;
             .card{
-                width: 600px;
+                width: 250px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -31,6 +54,8 @@ export const Wrapper = styled.div`
                     font-weight: bold;
                     font-size: 18px;
                 }
+
+                
                 .button{
                     margin-top: 20px;
                     display: flex;
@@ -108,7 +133,7 @@ export const Wrapper = styled.div`
         top: 20%;
         width: 100%;
         a{
-            display: flex;
+        display: flex;
         background-color: ${Colors.red};
         justify-content: center;
         align-items: center;

@@ -9,11 +9,12 @@ export const Wrapper = styled.div`
         display: block;
         width: 50%;
     height: 1000%;
-    background-color: white;
+    background-color: ${Colors.white};
     position: absolute;
     top: 0;
     right: 0;
     z-index: 1;
+
     .header{
      
         display: flex;
@@ -37,14 +38,12 @@ export const Wrapper = styled.div`
             left: 50px;
         }
     }
-    }
-    .hidden{
-        display: none;
-    }
+
     .item{
-        margin:  0 auto;
-       
-                 width: 600px;
+                 margin:  15px auto;
+                 width: 200px;
+                 height: 300px;
+                 font-size: 8px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -71,28 +70,7 @@ export const Wrapper = styled.div`
                     background-color: ${Colors.red};
                     border-radius: 8px;
                     
-                 
-
-                        .btn{
-                        display: flex;
-                        justify-content: space-between;
-                        flex: 1;
-                        margin: 2px 18px;
-                        span{
-                            font-size: 20px;
-                            color: white;
-                        }
-                        button{
-                            font-size: 18px;
-                            color: white;
-                            font-size: 18px;
-                        border: none;
-                        background-color: transparent;
-                        }
-                        
-                    
-                       
-                    }
+        
                     .cart{
                         background-color: ${Colors.white};
                         color: white;
@@ -108,16 +86,20 @@ export const Wrapper = styled.div`
                     }
                 
                 img{
-                    width: 25%;
-                    height: 50px;
+                    width: 10%;
+                    height: 5px;
                     object-fit: cover;
-                    border-radius: 10px
+                    border-radius: 20px;
                 }
-                h2{
-                    font-size: 18px;
+              
+                
+            }
+
+            h2{
+                    font-size: 12px;
                     color: ${Colors.white};
                 }
-                .text{
+            .text{
                     display: flex;
                     gap: 10px;
                     flex-direction: column;
@@ -125,10 +107,18 @@ export const Wrapper = styled.div`
                     margin-top: 5px;
                     margin-bottom: 5px;
                 }
-                
-    
-            }
         
         
     }
+    }
+
+
+
+    .hidden{
+        display: none;
+        .vazio{
+            color: ${Colors.red};
+        }
+    }
+    
 `
