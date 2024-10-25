@@ -7,10 +7,10 @@ export default function Slider (){
     let [ currentIndex, setCurrentIndex] = useState(0)
     const image = ["https://blog.livup.com.br/wp-content/uploads/2019/11/foodiesfeed.com_healthy-vegetarian-salad-buffet-1.jpg", "https://www.nit.pt/wp-content/uploads/2021/05/eb513a4c57d57a86116367a3e81c71ba-754x394.jpg", "https://www.nit.pt/wp-content/uploads/2020/03/9a1158154dfa42caddbd0694a4e9bdc8.jpg"]
 
-/** setInterval(() =>{
+ /*setInterval(() =>{
         next()
-    }, 3000)*/
-    
+    }, 3000)
+    */
 
 
     const next = () =>{

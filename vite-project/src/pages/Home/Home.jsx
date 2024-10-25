@@ -9,7 +9,6 @@ export default function HomePage (){
     return(
         <div>
             <NavBar/>
-            <SearchBar/>
             <Slider/>
             <Product/>
             <Footer/>

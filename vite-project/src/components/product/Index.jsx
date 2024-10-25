@@ -5,6 +5,7 @@ import { useState } from "react";
 import Colors from "../../Utils/Colors";
 import Cart from "../Cart";
 import { FaCartPlus } from 'react-icons/fa';
+import {SearchBar} from "../../components/Search/index.jsx"
 
 export default function Product() {
     const [data, setData] = useState(DATA);
@@ -70,7 +71,6 @@ export default function Product() {
                 }
             });
         }
-        console.log(selectedItem)
     };
 
     return (
@@ -90,6 +90,10 @@ export default function Product() {
             <h1>Nossos Produtos</h1>
             </div>
             <div className="container" id="prod">
+
+            <SearchBar setData={setData} data={data}>
+                <a href="#prod"/>
+            </SearchBar>
                
                 <div className="cards">
                     {data[indexAtive].products.map((item) => (
