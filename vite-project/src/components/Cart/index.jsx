@@ -18,15 +18,18 @@ export default function Cart({ visible, setVisible, data }) {
                     data.map((item) => (
                         <div key={item?.id} className="item">
                             <img src={item?.image} alt={item?.products?.name} />
-                            <h2>{item?.name}</h2>
-                            <h2>{item?.qtd}</h2>
-                            <p>{item?.description}</p>
-                            <span>R$ {item?.price.toFixed(1)}</span>
+                            <h2>Nome: {item?.name}</h2>
+                            <h2>Itens: {item?.qtd}</h2>
+                            <h2>Preço: R$ {item?.price.toFixed(1) * item?.qtd}</h2>
                         </div>
                     ))
                 ) : (
                     <div className="vazio"> <p>O carrinho está vazio.</p> </div> 
                 )}
+                <div className="comprar">
+                <button>Comprar</button>
+                </div>
+              
             </div>
         </Wrapper>
     );

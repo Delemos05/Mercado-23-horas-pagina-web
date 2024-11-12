@@ -91,10 +91,8 @@ export default function Product() {
             </div>
             <div className="container" id="prod">
 
-            <SearchBar setData={setData} data={data}>
-                <a href="#prod"/>
-            </SearchBar>
-               
+            <SearchBar setData={setData} data={data}/>
+
                 <div className="cards">
                     {data[indexAtive].products.map((item) => (
                         <div key={item.id} className="card">
